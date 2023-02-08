@@ -1,38 +1,108 @@
-.App {
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Inter, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial,
+    Sans-Serif;
+  color: #fff;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  width: 100vw;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  background-color: #302e2b;
 }
 
-.App-link {
-  color: #61dafb;
+.board {
+  width: calc(64px * 8);
+  height: calc(64px * 8);
+  display: flex;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.currentPlayer {
+  margin-left: -185px;
+  margin-bottom: -200px;
+}
+
+.timerBlock {
+  margin-top: -150px;
+  margin-right: 50px;
+}
+
+.cell {
+  width: 64px;
+  height: 64px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell img {
+  width: 65px;
+  height: 65px;
+  position: relative;
+}
+
+.black {
+  background-color: #759656;
+}
+
+.white {
+  background-color: #eeeed2;
+}
+
+.selected {
+  background-color: #f8f88b;
+}
+
+.available {
+  height: 20px;
+  width: 20px;
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.lost {
+  height: calc(50vh - 80px);
+  padding: 30px;
+  margin-left: 50px;
+  background-color: #fff;
+}
+.lostText {
+  color: #000;
+}
+.lostTextFigure {
+  color: #000;
+  font-size: smaller;
+}
+
+.buttonRestart {
+  background-color: #dbd9d7;
+  border-radius: 8px;
+  border-width: 0;
+  color: #666463;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Haas Grot Text R Web", "Helvetica Neue", Helvetica, Arial,
+    sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 10px 12px;
+  text-align: center;
+  transition: all 200ms;
+  vertical-align: baseline;
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.logoRestart {
+  margin-bottom: -5px;
+  margin-left: -10px;
 }
