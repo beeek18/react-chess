@@ -1,4 +1,5 @@
 import logo from '../../assets/black-king.png'
+
 import { Cell } from '../Cell';
 import { Colors } from "../Colors";
 
@@ -38,9 +39,6 @@ export class Figure {
     return true
   }
 
-
   moveFigure(target: Cell) { }
-
-
 }
 

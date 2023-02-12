@@ -13,7 +13,6 @@ export class Board {
   lostBlackFigures: Figure[] = []
   lostWhiteFigures: Figure[] = []
 
-
   public initCells() {
     for (let i = 0; i < 8; i++) { // lines
       const row: Cell[] = []
@@ -79,6 +78,7 @@ export class Board {
       new Queen(Colors.WHITE, this.getCell(3, 7))
     }
   }
+
   private addRooks() {
     for (let i = 0; i < 2; i++) {
       new Rook(Colors.BLACK, this.getCell(0, 0))
@@ -87,6 +87,7 @@ export class Board {
       new Rook(Colors.WHITE, this.getCell(7, 7))
     }
   }
+
   private addBishops() {
     for (let i = 0; i < 2; i++) {
       new Bishop(Colors.BLACK, this.getCell(2, 0))

@@ -1,4 +1,5 @@
 import React from 'react'
+
 import { Figure } from '../models/figures/Figure';
 
 interface LostFiguresProps {

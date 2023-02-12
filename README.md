@@ -1,7 +1,8 @@
 <h1> React Chess ♟️
 
 <h4>
-<li>TS, React
+<li>React
+<li>TypeScript
 <li>Сreate OOP classes for chess. Initializing the cells of the chessboard
 <li>Board coordinates. X Y
 <li>Game logic. Highlight available cells

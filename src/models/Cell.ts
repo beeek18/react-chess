@@ -12,7 +12,13 @@ export class Cell {
   id: number; // for react keys
 
 
-  constructor(board: Board, x: number, y: number, color: Colors, figure: Figure | null) {
+  constructor(
+    board: Board,
+    x: number,
+    y: number,
+    color: Colors,
+    figure: Figure | null
+  ) {
     this.x = x;
     this.y = y;
     this.color = color;
@@ -103,6 +109,7 @@ export class Cell {
       if (target.figure) {
         this.addLostFigure(target.figure)
       }
+
       target.setFigure(this.figure)
       this.figure = null
     }
@@ -112,5 +119,4 @@ export class Cell {
     console.log(this.board.cells.length);
     return [];
   }
-
 }

@@ -64,15 +64,18 @@
   border-radius: 50%;
   background-color: rgba(0, 0, 0, 0.1);
 }
+
 .lost {
   height: calc(50vh - 80px);
   padding: 30px;
   margin-left: 50px;
   background-color: #fff;
 }
+
 .lostText {
   color: #000;
 }
+
 .lostTextFigure {
   color: #000;
   font-size: smaller;
