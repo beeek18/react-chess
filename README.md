@@ -1,4 +1,4 @@
-<h1> React Chess ♟️
+<h1>Chess ♟️
 
 <h4>
 <li>React
